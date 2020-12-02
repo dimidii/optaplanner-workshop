@@ -1,0 +1,13 @@
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/domain/Room.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/domain/Lesson.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/domain/Timeslot.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/data/DemoDataGenerator.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/persistence/TimeslotRepository.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/rest/RoomResource.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/rest/TimeTableResource.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/rest/LessonResource.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/solver/TimeTableConstraintProvider.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/persistence/LessonRepository.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/rest/TimeslotResource.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/persistence/RoomRepository.java
+/home/suca/Documents/Work/Local/University/year04/sem01/ESDE/OctaPlanner/Workshop/octaplanner-quarkus/src/main/java/domain/TimeTable.java
