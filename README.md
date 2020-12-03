@@ -42,7 +42,7 @@ cd optaplanner-quickstart
 ## Test your application
 Ubuntu/MacOS
 ```
-./mvnw compile quarkus:dev
+./mvnw compile quarkus:dev OR mvn compile quarkus:dev
 ```
 Windows
 ```
