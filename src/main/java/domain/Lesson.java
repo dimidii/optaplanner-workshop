@@ -1,12 +1,88 @@
 package domain;
 
+import org.optaplanner.core.api.domain.entity.PlanningEntity;
+import org.optaplanner.core.api.domain.lookup.PlanningId;
+import org.optaplanner.core.api.domain.variable.PlanningVariable;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+@PlanningEntity
+@Entity
 public class Lesson {
-    // TODO Create the Lesson object
-    /**
-     * This class should have the following variables: id(long), subject(string), teacher(string), studentGroup(string), timeslot(Timeslot) and room(Room)
-     * Tip: make all the variables private and provide getters.
-     * Multiple constructors: one empty, two with all variables, one without id and one with id
-     *
-     * Extra tip: you can create your own toString that will help during debugging
-     */
+    @PlanningId
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    private String subject;
+    private String teacher;
+    private String studentGroup;
+
+    @PlanningVariable(valueRangeProviderRefs = "timeslotRange")
+    @ManyToOne
+    private Timeslot timeslot;
+    @PlanningVariable(valueRangeProviderRefs = "roomRange")
+    @ManyToOne
+    private Room room;
+
+    public Lesson() {
+    }
+
+    public Lesson(String subject, String teacher, String studentGroup) {
+        this.subject = subject.trim();
+        this.teacher = teacher.trim();
+        this.studentGroup = studentGroup.trim();
+    }
+
+    public Lesson(long id, String subject, String teacher, String studentGroup, Timeslot timeslot, Room room) {
+        this(subject, teacher, studentGroup);
+        this.id = id;
+        this.timeslot = timeslot;
+        this.room = room;
+    }
+
+    @Override
+    public String toString() {
+        return subject + "(" + id + ")";
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public String getTeacher() {
+        return teacher;
+    }
+
+    public String getStudentGroup() {
+        return studentGroup;
+    }
+
+    public Timeslot getTimeslot() {
+        return timeslot;
+    }
+
+    public void setTimeslot(Timeslot timeslot) {
+        this.timeslot = timeslot;
+    }
+
+    public Room getRoom() {
+        return room;
+    }
+
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
 }

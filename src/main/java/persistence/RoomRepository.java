@@ -1,5 +1,10 @@
 package persistence;
 
-public class RoomRepository {
-    // TODO Make RoomRepository uses the PanacheRepository.
+import domain.Room;
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
+
+import javax.enterprise.context.ApplicationScoped;
+
+@ApplicationScoped
+public class RoomRepository implements PanacheRepository<Room> {
 }

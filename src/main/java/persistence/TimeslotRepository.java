@@ -1,5 +1,11 @@
 package persistence;
 
-public class TimeslotRepository {
-    // TODO Make TimeslotRepository uses the PanacheRepository.
+import domain.Timeslot;
+
+import javax.enterprise.context.ApplicationScoped;
+import io.quarkus.hibernate.orm.panache.PanacheRepository;
+
+@ApplicationScoped
+public class TimeslotRepository implements PanacheRepository<Timeslot> {
+
 }

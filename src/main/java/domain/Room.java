@@ -1,12 +1,46 @@
 package domain;
 
+import org.optaplanner.core.api.domain.lookup.PlanningId;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+@Entity
 public class Room {
-    // TODO Create the Room object
-    /**
-     * This class should have the following variables: id(long), name(string)
-     * Tip: make all the variables private and provide getters.
-     * Multiple constructors: one empty, two with all variables, one without id and one with id
-     *
-     * Extra tip: you can create your own toString that will help during debugging
-     */
+    @PlanningId
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    private String name;
+
+    public Room() {
+    }
+
+    public Room(String name) {
+        this.name = name;
+    }
+
+    public Room(long id, String name) {
+        this(name);
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
