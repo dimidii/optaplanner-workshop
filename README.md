@@ -38,6 +38,7 @@ mvn io.quarkus:quarkus-maven-plugin:1.10.2.Final:create \
     -Dextensions="resteasy,resteasy-jackson,optaplanner-quarkus,optaplanner-quarkus-jackson"
 cd optaplanner-quickstart
 ```
+Or clone the repository on your machine and reload the pom file so the dependancies can be installed and used.
 
 ## Test your application
 Ubuntu/MacOS
