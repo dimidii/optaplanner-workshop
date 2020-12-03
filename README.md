@@ -17,7 +17,7 @@ To complete this guide, you need:
 
 ## Assigment
 
-During this workshop you will build a simplistic REST application that optimizes a school timetable for students and teachers,
+During this workshop you will build a simplistic REST application that optimizes a school timetable for students and teachers, look at the 'model_diagram' figure inside this repository to get a better overview of the assigment.
 Your service will assign Lesson instances to Timeslot and Room instances automatically by using AI to adhere to hard and soft scheduling constraints.
 
 Use https://code.quarkus.io/ to generate an application with the following extensions, for Maven or Gradle:
